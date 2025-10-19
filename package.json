@@ -1,19 +1,14 @@
 {
-  "name": "shopify-affiliate-automation",
+  "name": "shopify-affiliate-automation-replit",
   "version": "0.1.0",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
-    "migrate": "node src/db.js --migrate"
+    "start": "node index.js"
   },
   "dependencies": {
     "express": "^4.x",
     "node-fetch": "^2.x",
-    "sqlite3": "^5.x",
-    "knex": "^2.x",
     "node-cron": "^3.x",
-    "body-parser": "^1.x",
-    "jsonwebtoken": "^9.x"
+    "dotenv": "^16.x"
   }
 }

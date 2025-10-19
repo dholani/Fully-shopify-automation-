@@ -1,2 +1,2 @@
-Shopify + Affiliate Automation - Ready to Run
-Includes all integrations (Shopify, Admitad, Travelpayouts, Zoho, Klaviyo, DSers/Zendrop).
+Shopify + Affiliate Automation - Replit Ready
+Includes all automations and credentials embedded.

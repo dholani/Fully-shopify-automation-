@@ -1,5 +1,6 @@
 const express = require('express');
 const cron = require('node-cron');
+require('dotenv').config();
 const app = express();
 
 app.get('/dashboard', (req, res) => {
@@ -8,6 +9,8 @@ app.get('/dashboard', (req, res) => {
 
 cron.schedule(process.env.CRON_SCHEDULE || '0 */6 * * *', () => {
   console.log('Running scheduled automation tasks...');
+  // Add code here to fetch affiliate deals, update Shopify, post to social, send emails, etc.
 });
 
-app.listen(process.env.PORT || 8080, () => console.log('App running'));
+const port = process.env.PORT || 8080;
+app.listen(port, () => console.log(`Replit app running on port ${port}`));
